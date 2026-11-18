@@ -824,7 +824,7 @@ html[data-theme="light"] .eyebrow:has(.section-index) { border-color: rgb(169 10
 @media (hover: none) { .place-entry p { max-height: 150px; margin-top: 8px; opacity: 1; } }
 
 /* Immersive photo band */
-.immersive { position: relative; display: grid; place-items: center; min-height: 78svh; padding: 140px 8vw; overflow: hidden; background: linear-gradient(rgb(19 13 7 / 48%), rgb(19 13 7 / 78%)), url("https://commons.wikimedia.org/wiki/Special:FilePath/New_York_rock_formations_near_Konso.jpg?width=1920") center / cover fixed #130d07; text-align: center; }
+.immersive { position: relative; display: grid; place-items: center; min-height: 78svh; padding: 140px 8vw; overflow: hidden; background: linear-gradient(rgb(19 13 7 / 48%), rgb(19 13 7 / 78%)), url("images/commons/commons-new-york-rock-formations-near-konso-jpg-2f418e38.webp") center / cover fixed #130d07; text-align: center; }
 .immersive-inner { max-width: 820px; }
 .immersive h2 { margin: 0 0 22px; color: #fff6e4; font-size: clamp(38px, 5.6vw, 78px); line-height: 1.06; letter-spacing: -.02em; }
 .immersive p { max-width: 600px; margin: 0 auto 32px; color: #eadcc2; font-size: 17px; line-height: 1.8; }
@@ -846,7 +846,7 @@ html[data-theme="light"] .eyebrow:has(.section-index) { border-color: rgb(169 10
 .faq-list details:first-child { border-top: 1px solid var(--line); }
 .visit-image { border-radius: var(--radius-lg); }
 .story-image-wrap { border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
-.heritage-section { background: linear-gradient(rgb(19 13 7 / 86%), rgb(19 13 7 / 94%)), url("https://commons.wikimedia.org/wiki/Special:FilePath/Konso_village_in_the_Cultural_Landscape_of_Konso.jpg?width=1920") center / cover #130d07; }
+.heritage-section { background: linear-gradient(rgb(19 13 7 / 86%), rgb(19 13 7 / 94%)), url("images/commons/commons-konso-village-in-the-cultural-landscape-of-konso-jpg-20d840a5.webp") center / cover #130d07; }
 .heritage-facts { border-radius: var(--radius); }
 .photo-credits { flex: 1 1 100%; color: #cdbd9f; font-size: 11px; line-height: 1.7; }
 .photo-credits summary { width: fit-content; cursor: pointer; color: var(--gold); font-weight: 600; }
@@ -1167,3 +1167,40 @@ html { scroll-behavior: smooth; }
 .media-body small { color: var(--muted); font-size: 11.5px; line-height: 1.55; }
 .media-note { max-width: 780px; margin: 30px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
 html[data-theme="light"] .media-section { background: #f2e8d6; }
+
+/* ===== Final responsive overrides — keep this block last ===== */
+@media (max-width: 800px) {
+  .hero { padding: 96px 6vw 200px; }
+  .hero h1 { margin-bottom: 18px; font-size: clamp(30px, 8.5vw, 42px); line-height: 1.1; letter-spacing: 0; }
+  .hero-copy > .eyebrow { margin-bottom: 22px; font-size: 11px; }
+  .hero-actions > .text-link, .ghost-link { padding: 12px 22px; font-size: 13px; }
+  .hero-facts { bottom: 16px; width: calc(100% - 32px); grid-template-columns: 1fr; border-radius: 18px; }
+  .hero-facts li { padding: 9px 12px; }
+  .hero-facts strong { font-size: 22px; }
+  .hero-facts span { font-size: 10.5px; }
+  .hero-dots { bottom: 170px; }
+  .section-pad { padding-top: clamp(48px, 10vw, 72px); padding-bottom: clamp(48px, 10vw, 72px); }
+  .section-heading h2, .places-heading h2, .culture-intro h2, .photo-heading h2,
+  .story-content h2, .visit-grid h2, .karat-intro h2, .gesergiyo-copy h2,
+  .about-map-heading h2, .about-sources h2, .about-photo-heading h2,
+  .immersive h2, .media-heading h2 { font-size: clamp(26px, 7vw, 36px); line-height: 1.12; }
+  .large-copy { font-size: clamp(16px, 4vw, 19px); }
+  .site-nav a { padding: 11px 0; font-size: 13px; }
+}
+
+@media (max-width: 420px) {
+  body { font-size: 15px; }
+  .hero { padding-top: 92px; padding-bottom: 188px; }
+  .hero h1 { font-size: clamp(27px, 9vw, 34px); }
+  .hero-copy > .eyebrow { margin-bottom: 18px; }
+  .hero-actions > .text-link, .ghost-link { padding: 11px 18px; font-size: 12px; }
+  .hero-facts { display: none; }
+  .hero-dots { bottom: 120px; }
+  .section-pad { padding-top: 44px; padding-bottom: 44px; }
+  .section-heading h2, .places-heading h2, .culture-intro h2, .photo-heading h2,
+  .story-content h2, .visit-grid h2, .karat-intro h2, .gesergiyo-copy h2,
+  .about-map-heading h2, .about-sources h2, .about-photo-heading h2,
+  .immersive h2, .media-heading h2 { font-size: clamp(24px, 8vw, 30px); }
+  .wordmark-text strong { font-size: 15px; }
+  .header-tools select { width: 76px; font-size: 10px; }
+}
