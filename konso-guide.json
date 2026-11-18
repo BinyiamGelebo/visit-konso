@@ -1,0 +1,302 @@
+{
+  "name": {
+    "en": "The Konso people",
+    "am": "የኮንሶ ሕዝብ",
+    "om": "Uummata Konsoo"
+  },
+  "location": {
+    "en": "Konso Zone, southern Ethiopia",
+    "am": "የኮንሶ ዞን፣ ደቡባዊ ኢትዮጵያ",
+    "om": "Godina Konsoo, kibba Itoophiyaa"
+  },
+  "profileHeading": {
+    "en": "People, place and a living heritage",
+    "am": "ሕዝብ፣ ቦታና ሕያው ቅርስ",
+    "om": "Uummata, iddoo fi dhaala jiraataa"
+  },
+  "profileIntro": {
+    "en": "Konso is not only a landscape to look at. It is the homeland of diverse communities whose knowledge, choices and everyday work continue to shape it. No short guide can speak for every family or village.",
+    "am": "ኮንሶ ለመመልከት የሚያምር መልክዓ ምድር ብቻ አይደለም። የተለያዩ ማኅበረሰቦች መኖሪያ ሲሆን እውቀታቸው፣ ምርጫቸውና ዕለታዊ ሥራቸው ዛሬም ይቀርጹታል። አጭር መመሪያ የእያንዳንዱን ቤተሰብ ወይም መንደር ወክሎ መናገር አይችልም።",
+    "om": "Konsoon bakka ilaalamu qofa miti. Biyya hawaasota garaagaraa ti; beekumsi, filannoon fi hojiin isaanii guyyaa guyyaan ammallee bakkicha ijaaru. Qajeelfamni gabaabaan maatii yookaan gandaa hunda bakka bu'ee dubbachuu hin danda'u."
+  },
+  "peopleProfile": [
+    {
+      "title": {
+        "en": "Identity and language",
+        "am": "ማንነትና ቋንቋ",
+        "om": "Eenyummaa fi afaan"
+      },
+      "body": {
+        "en": "Konso (also called Afaa Xonso) is an Indigenous language spoken in the area. Konso people are not a single, unchanging story: identities and experiences differ among communities and individuals.",
+        "am": "ኮንሶ (አፋ ኾንሶ ተብሎም ይጠራል) በአካባቢው የሚነገር አገር በቀል ቋንቋ ነው። የኮንሶ ሕዝብ አንድና የማይለወጥ ታሪክ አይደለም፤ ማንነትና ልምድ በማኅበረሰቦችና በግለሰቦች መካከል ይለያያሉ።",
+        "om": "Afaan Konsoo (Afaa Xonso jedhamees waamama) afaan dhaloota naannoo kanaa isa asii bara dheeraaf dubbatamu dha. Uummanni Konsoo seenaa tokko, hin jijjiiramne miti; eenyummaan fi muuxannoon hawaasotaa fi namoota gidduutti ni garaagara."
+      }
+    },
+    {
+      "title": {
+        "en": "Knowledge of the land",
+        "am": "ስለ መሬት ያለ እውቀት",
+        "om": "Beekumsa lafaa"
+      },
+      "body": {
+        "en": "Stone terraces, walls and shared water systems show generations of skill in farming steep slopes and caring for soil and water. Their upkeep is living work, not a finished monument.",
+        "am": "የድንጋይ እርከኖች፣ ግንቦችና የጋራ የውሃ ሥርዓቶች ቁልቁለታማ ኮረብታዎችን ለማረስ፣ አፈርንና ውሃን ለመጠበቅ የትውልዶች ችሎታን ያሳያሉ። ጥገናቸው አሁንም የሚቀጥል ሥራ ነው እንጂ የተጠናቀቀ ሐውልት አይደለም።",
+        "om": "Tarrisiiwwan dhagaa, dallaawwan fi sirni bishaanii waliinii, dhaloota hedduuf dandeettii qonna gaaraa dhiphaa fi eegumsa biyyoo fi bishaanii agarsiisu. Eegumsi isaanii hojii jiraataa dha malee taateewwan xumurame miti."
+      }
+    },
+    {
+      "title": {
+        "en": "Community and memory",
+        "am": "ማኅበረሰብና ትውስታ",
+        "om": "Hawaasaa fi yaadannoo"
+      },
+      "body": {
+        "en": "Moras are shared gathering structures or spaces within settlements. Generation-marking stones (daga-hela) and olahita trees are distinct parts of Konso systems of generational memory; waka are carved wooden memorial figures. Music, dance and ceremonies are tied to particular communities and occasions. The meaning and access of these places and practices belong first to local communities and custodians.",
+        "am": "ሞራዎች በሰፈሮች ውስጥ የጋራ መሰብሰቢያ ሕንጻዎች ወይም ስፍራዎች ናቸው። የትውልድ ማስታወሻ ድንጋዮች (ዳጋ-ሄላ) እና ኦላሂታ ዛፎች በኮንሶ የትውልድ ትውስታ ሥርዓቶች የተለያዩ አካላት ናቸው፤ ዋካ ደግሞ የተቀረጹ የእንጨት መታሰቢያ ምስሎች ናቸው። ሙዚቃ፣ ዳንስና ሥነ ሥርዓቶች ከተወሰኑ ማኅበረሰቦችና አጋጣሚዎች ጋር የተያያዙ ናቸው። የእነዚህ ስፍራዎችና ልምዶች ትርጉምና መዳረሻ በመጀመሪያ በአካባቢው ማኅበረሰቦችና ጠባቂዎች ሥር ነው።",
+        "om": "Moraan iddoowwan yookaan ijaarsaawwan hawaasni qubsuma keessatti itti walitti qabamu dha. Dhagaaleen dhaloota yaadachiisan (daga-hela) fi mukkeen olahita sirna yaadannoo dhalootaa Konsoo keessatti wantoota adda addaa dha; waka immoo bifa muka irraa soofame kan yaadannoo ti. Muuziqaan, shubbisni fi sirni aadaa hawaasa murtaa’aa fi yeroo murtaa’aa waliin hidhata qabu. Hiikni iddoowwan fi gochoota kanaa, akkasumas eenyu akka itti seenu, dura hawaasaa fi eegdota naannoo sanaa bira jira."
+      }
+    },
+    {
+      "title": {
+        "en": "Life today",
+        "am": "የዛሬ ሕይወት",
+        "om": "Jireenya har'aa"
+      },
+      "body": {
+        "en": "Konso people live contemporary lives shaped by farming, education, trade, public life and connections beyond the region, as well as by local heritage. Not every person farms, and traditions vary and change.",
+        "am": "የኮንሶ ሕዝብ በእርሻ፣ በትምህርት፣ በንግድ፣ በማኅበራዊ ሕይወትና ከክልሉ ውጭ ባሉ ግንኙነቶች የሚቀረጽ ዘመናዊ ሕይወት ይኖራሉ፤ የአካባቢ ቅርስም የዚህ አካል ነው። ሁሉም ሰው አርሶ አደር አይደለም፤ ባህሎችም ይለያያሉ እና ይለወጣሉ።",
+        "om": "Uummanni Konsoo jireenya ammayyaa qonna, barnoota, daldala, jireenya hawaasaa fi hariiroo naannicaa ala jiru, akkasumas dhaala naannoo isaanii tiin bocame jiraata. Nama hundi qonnaan bulaa miti; aadaan ni garaagara, ni jijjiiramas."
+      }
+    },
+    {
+      "title": {
+        "en": "Farming, food and resilience",
+        "am": "እርሻ፣ ምግብና መቋቋም",
+        "om": "Qonna, nyaataa fi dandamachuu"
+      },
+      "body": {
+        "en": "Mixed farming has long supported life in the Konso highlands. Sorghum and millet are important grains, alongside other crops suited to local conditions. Shelgeda, a locally valued leafy tree crop related to moringa, is also part of food knowledge. Terraces help protect fields and make careful use of limited rainfall.",
+        "am": "በኮንሶ ደጋማ አካባቢ የተቀላቀለ እርሻ ለረጅም ጊዜ የኑሮ መሠረት ሆኗል። ማሽላና ሚሌት አስፈላጊ የእህል ሰብሎች ሲሆኑ፣ ከአካባቢው ሁኔታ ጋር የሚስማሙ ሌሎች ሰብሎችም ይበቅላሉ። ሸልገዳ የሚባል ከሞሪንጋ ጋር የሚዛመድ ቅጠላማ ዛፍም በምግብ እውቀት ውስጥ ቦታ አለው። እርከኖች እርሻን ከመሸርሸር ይጠብቃሉ እና ውስን ዝናብን በጥንቃቄ ለመጠቀም ይረዳሉ።",
+        "om": "Qonni walxaxaan dheeraaf jireenya baddaa Konsoo deggeraa tureera. Boqqolloo fi daleessi midhaan barbaachisoo dha; midhaan biroos haala naannoo sanaaf mijatan waliin. Shelgeedaan, biqila mukaa moringaa waliin wal-fakkaatu naannoo keessatti kabajamu, beekumsa nyaataa keessaas ramadama. Tarrisiiwwan lafa qonnaa eegu, roobni xiqqaan sun of eeggannoodhaan itti fayyadamamuu isaaf gargaaru."
+      }
+    },
+    {
+      "title": {
+        "en": "Cooperation and community leadership",
+        "am": "ትብብርና የማኅበረሰብ አመራር",
+        "om": "Tumsaa fi hoggansa hawaasaa"
+      },
+      "body": {
+        "en": "Building and repairing terraces, walls and water reservoirs calls for cooperation. Traditional community structures—including age grades, clans, elders and locally recognised custodians—have helped organize shared responsibilities. These systems exist alongside contemporary local government, education and civic life; practices vary between communities.",
+        "am": "እርከኖችን፣ ግንቦችንና የውሃ ማጠራቀሚያዎችን መገንባትና መጠገን ትብብርን ይፈልጋል። የዕድሜ ቡድኖች፣ ጎሳዎች፣ ሽማግሌዎችና በአካባቢው የሚታወቁ ጠባቂዎችን የሚያካትቱ ባህላዊ መዋቅሮች የጋራ ኃላፊነትን ለማደራጀት አግዘዋል። እነዚህ ሥርዓቶች ከዘመናዊ አስተዳደር፣ ትምህርትና ማኅበራዊ ሕይወት ጋር አብረው ይኖራሉ፤ አሠራሮችም በማኅበረሰቦች መካከል ይለያያሉ።",
+        "om": "Tarrisii, dallaa fi haroo bishaanii ijaaruu fi suphuun tumsa gaafata. Caasaaleen hawaasaa aadaa—garee umurii, gosoota, jaarsolii fi eegdota naannoo beekamanii dabalatee—itti gaafatamummaa waliinii gurmeessuuf gargaaraniiru. Sirnoonni kun bulchiinsa naannoo, barnoota fi jireenya siivilii ammayyaa waliin jiru; hojiin hawaasa gidduutti ni garaagara."
+      }
+    },
+    {
+      "title": {
+        "en": "Craft, homes and local skill",
+        "am": "የእጅ ጥበብ፣ ቤቶችና አካባቢያዊ ክህሎት",
+        "om": "Ogummaa harkaa, mana fi dandeettii naannoo"
+      },
+      "body": {
+        "en": "Stone construction, woodwork, weaving and cotton work reflect practical skills as well as creative expression. Traditional homes and communal buildings are made with materials suited to the highlands. Skills are learned, adapted and shared; contemporary makers also respond to changing needs and markets.",
+        "am": "የድንጋይ ግንባታ፣ የእንጨት ሥራ፣ ሽመናና የጥጥ ሥራ ተግባራዊ ክህሎትን እና የፈጠራ አገላለጽን ያንጸባርቃሉ። ባህላዊ ቤቶችና የጋራ ሕንፃዎች ለደጋው አካባቢ ተስማሚ በሆኑ ቁሳቁሶች ይሠራሉ። ክህሎቶች ይማራሉ፣ ይሻሻላሉ እና ይጋራሉ፤ የዛሬ አምራቾችም ለሚለዋወጡ ፍላጎቶችና ገበያዎች ምላሽ ይሰጣሉ።",
+        "om": "Ijaarsi dhagaa, hojiin mukaa, hodhuu fi hojiin cuuphaa dandeettii hojii qofa osoo hin taane ofiin ibsuus mul'isa. Manneen aadaa fi ijaarsi waliinii meeshaalee baddaaf mijatan irraa hojjetamu. Dandeettiin ni barama, ni sirreeffama, ni qooddatama; ogeeyyiin ammayyaas fedhii fi gabaa jijjiiramaa deebii kennu."
+      }
+    },
+    {
+      "title": {
+        "en": "A long history, a changing present",
+        "am": "ረጅም ታሪክና የሚለወጥ ዛሬ",
+        "om": "Seenaa dheeraa, ammaan jijjiiramaa"
+      },
+      "body": {
+        "en": "UNESCO describes a long-continuing cultural tradition in the landscape. Konso life is not frozen in the past: people study, work in many professions, trade, travel and use modern technologies while continuing to care for valued heritage. No single description can represent every Konso experience.",
+        "am": "ዩኔስኮ በመልክዓ ምድሩ የቆየ የባህል ቀጣይነት እንዳለ ይገልጻል። የኮንሶ ሕይወት በቀድሞ ጊዜ የቆመ አይደለም፤ ሰዎች ይማራሉ፣ በተለያዩ ሙያዎች ይሠራሉ፣ ይነግዳሉ፣ ይጓዛሉ እና ዘመናዊ ቴክኖሎጂን ይጠቀማሉ፤ በተመሳሳይ ጊዜ የሚያከብሩትን ቅርስ ይጠብቃሉ። አንድ ገለጻ የእያንዳንዱን የኮንሶ ልምድ ሊወክል አይችልም።",
+        "om": "UNESCO’n bocni aadaa kun dhaloota hedduu keessatti itti fufaa akka ture ibsa. Jireenyi Konsoo seenaa duriitti hin cituu: namoonni ni baratu, ogummaa baay’ee irratti hojjetu, daldalu, imalu, teekinoloojii ammayyaa fayyadamu; dhaala kabajamu ammas ni eegu. Ibsi tokko muuxannoo Konsoo hunda bakka bu’uu hin danda’u."
+      }
+    }
+  ],
+  "visitorGuidance": {
+    "en": [
+      "Ask permission before photographing people, homes or cultural objects.",
+      "Visit lived-in settlements with a local guide and follow residents' directions.",
+      "Treat ceremonies and sensitive places as private unless invited by their custodians.",
+      "Support local guides, makers and sellers directly where possible."
+    ],
+    "am": [
+      "ሰዎችን፣ ቤቶችን ወይም የባህል ዕቃዎችን ከማንሳትዎ በፊት ፈቃድ ይጠይቁ።",
+      "በሰዎች የሚኖሩባቸውን ሰፈሮች ከአካባቢው አስጎብኚ ጋር ይጎብኙ፤ የነዋሪዎችንም መመሪያ ይከተሉ።",
+      "ጠባቂዎቻቸው ካልጋበዙዎት በስተቀር ሥነ ሥርዓቶችንና ስሱ ስፍራዎችን የግል እንደሆኑ ያክብሩ።",
+      "በሚቻልበት ጊዜ ከአካባቢው አስጎብኚዎች፣ አምራቾችና ሻጮች በቀጥታ ይግዙ።"
+    ],
+    "om": [
+      "Nama, mana yookaan meeshaa aadaa suuraa kaasuun dura eyyama gaafadhaa.",
+      "Qubsumaawwan namni keessa jiraatu qajeelcha naannoo waliin daawwadhaa, qajeelfama jiraattotaa hordofaa.",
+      "Sirna aadaa fi iddoowwan amansiisoo, eegdonni isaanii yoo afeeran malee, dhuunfaa taasisaa ilaalaa.",
+      "Qajeelchota, ogeeyyii fi gurgurtoota naannoo yeroo danda'ametti kallattiin deeggaraa."
+    ]
+  },
+  "sources": [
+    {
+      "title": "UNESCO World Heritage Centre: Konso Cultural Landscape",
+      "url": "https://whc.unesco.org/en/list/1333/"
+    },
+    {
+      "title": "UNESCO: Konso Cultural Landscape maps",
+      "url": "https://whc.unesco.org/en/list/1333/maps/"
+    },
+    {
+      "title": "Ethnologue: Konso language",
+      "url": "https://www.ethnologue.com/language/kxc/"
+    },
+    {
+      "title": "Ethiopian Grade 9 History Student Textbook — Konso section",
+      "url": "https://anrseb.gov.et/Backup%20dec%202021/wp-content/uploads/New_Text_Books/Grade9/G9-History-STB-2023-ANRSEB.pdf"
+    },
+    {
+      "title": "Visit Ethiopia — Konso Cultural Landscape",
+      "url": "https://www.visitethiopia.et/space/konso-cultural-landscape"
+    }
+  ],
+  "itineraries": {
+    "en": {
+      "1": [
+        {
+          "title": "Begin in Karat",
+          "detail": "Meet a local guide, check current access and agree on a route with the community."
+        },
+        {
+          "title": "Visit a welcoming paleta",
+          "detail": "Walk public lanes and gathering places with permission; ask before taking photographs."
+        },
+        {
+          "title": "Learn from the terraces",
+          "detail": "See how stone walls shape the hillsides from an approved, accessible viewpoint."
+        },
+        {
+          "title": "Make time for the market",
+          "detail": "If it is open, discover seasonal produce and support local sellers and makers."
+        }
+      ],
+      "2": [
+        {
+          "title": "Begin in Karat",
+          "detail": "Meet a local guide, check current access and agree on a route with the community."
+        },
+        {
+          "title": "Visit a welcoming paleta",
+          "detail": "Walk public lanes and gathering places with permission; ask before taking photographs."
+        },
+        {
+          "title": "Learn from the terraces",
+          "detail": "See how stone walls shape the hillsides from an approved, accessible viewpoint."
+        },
+        {
+          "title": "Make time for the market",
+          "detail": "If it is open, discover seasonal produce and support local sellers and makers."
+        },
+        {
+          "title": "Leave room for conversation",
+          "detail": "Ask your host what they would like to share about language, farming or daily life."
+        },
+        {
+          "title": "Choose a community-led experience",
+          "detail": "Arrange a craft, farm or food visit through a local host, and join only by invitation."
+        }
+      ]
+    },
+    "am": {
+      "1": [
+        {
+          "title": "በካራት ይጀምሩ",
+          "detail": "ከአካባቢው አስጎብኚ ጋር ይገናኙ፣ የአሁኑን የመድረሻ ሁኔታ ያረጋግጡና ከማኅበረሰቡ ጋር መንገድ ይምረጡ።"
+        },
+        {
+          "title": "ተቀባይነት ወዳጁን ፓሌታ ይጎብኙ",
+          "detail": "ፈቃድ ባላቸው የጋራ መንገዶችና ስፍራዎች ይራመዱ፤ ፎቶ ከማንሳትዎ በፊት ይጠይቁ።"
+        },
+        {
+          "title": "ከእርከኖቹ ይማሩ",
+          "detail": "ተፈቅዶለት እና በቀላሉ ከሚደረስበት የእይታ ስፍራ የድንጋይ ግንቦች ኮረብታውን እንዴት እንደሚቀርጹ ይመልከቱ።"
+        },
+        {
+          "title": "ለገበያ ጊዜ ይተዉ",
+          "detail": "ገበያው ክፍት ከሆነ የወቅቱን ምርቶች ይወቁ፤ ከአካባቢው ሻጮችና አምራቾች ይግዙ።"
+        }
+      ],
+      "2": [
+        {
+          "title": "በካራት ይጀምሩ",
+          "detail": "ከአካባቢው አስጎብኚ ጋር ይገናኙ፣ የአሁኑን የመድረሻ ሁኔታ ያረጋግጡና ከማኅበረሰቡ ጋር መንገድ ይምረጡ።"
+        },
+        {
+          "title": "ተቀባይነት ወዳጁን ፓሌታ ይጎብኙ",
+          "detail": "ፈቃድ ባላቸው የጋራ መንገዶችና ስፍራዎች ይራመዱ፤ ፎቶ ከማንሳትዎ በፊት ይጠይቁ።"
+        },
+        {
+          "title": "ከእርከኖቹ ይማሩ",
+          "detail": "ተፈቅዶለት እና በቀላሉ ከሚደረስበት የእይታ ስፍራ የድንጋይ ግንቦች ኮረብታውን እንዴት እንደሚቀርጹ ይመልከቱ።"
+        },
+        {
+          "title": "ለገበያ ጊዜ ይተዉ",
+          "detail": "ገበያው ክፍት ከሆነ የወቅቱን ምርቶች ይወቁ፤ ከአካባቢው ሻጮችና አምራቾች ይግዙ።"
+        },
+        {
+          "title": "ለውይይት ጊዜ ይተዉ",
+          "detail": "አስተናጋጅዎ ስለ ቋንቋ፣ እርሻ ወይም ዕለታዊ ሕይወት ምን ማካፈል እንደሚፈልግ ይጠይቁ።"
+        },
+        {
+          "title": "በማኅበረሰብ የሚመራ ጉብኝት ይምረጡ",
+          "detail": "የእጅ ሥራ፣ እርሻ ወይም ምግብ ጉብኝትን ከአካባቢ አስተናጋጅ ጋር ያዘጋጁ፤ ሲጋብዙዎት ብቻ ይሳተፉ።"
+        }
+      ]
+    },
+    "om": {
+      "1": [
+        {
+          "title": "Kaaraatitti jalqabi",
+          "detail": "Qajeelcha naannoo wal'aanaa, haala ce'umsaa ammaa mirkaneeffadhu, karaa immoo hawaasa waliin waliigali."
+        },
+        {
+          "title": "Paleeta simatu daawwadhu",
+          "detail": "Daandii fi iddoowwan walitti qabamaa eyyama waliin deemi; suuraa kaasuun dura gaafadhu."
+        },
+        {
+          "title": "Tarrisii irraa baradhu",
+          "detail": "Dallaan dhagaa akkamitti gaaraa bocu iddoo ilaalaa hayyamamee fi ga'uu danda'amu irraa ilaali."
+        },
+        {
+          "title": "Gabaaf yeroo kenni",
+          "detail": "Yoo banaa ta'e, oomisha yeroo ilaali; gurgurtoota fi ogeeyyii naannoo deeggari."
+        }
+      ],
+      "2": [
+        {
+          "title": "Kaaraatitti jalqabi",
+          "detail": "Qajeelcha naannoo wal'aanaa, haala ce'umsaa ammaa mirkaneeffadhu, karaa immoo hawaasa waliin waliigali."
+        },
+        {
+          "title": "Paleeta simatu daawwadhu",
+          "detail": "Daandii fi iddoowwan walitti qabamaa eyyama waliin deemi; suuraa kaasuun dura gaafadhu."
+        },
+        {
+          "title": "Tarrisii irraa baradhu",
+          "detail": "Dallaan dhagaa akkamitti gaaraa bocu iddoo ilaalaa hayyamamee fi ga'uu danda'amu irraa ilaali."
+        },
+        {
+          "title": "Gabaaf yeroo kenni",
+          "detail": "Yoo banaa ta'e, oomisha yeroo ilaali; gurgurtoota fi ogeeyyii naannoo deeggari."
+        },
+        {
+          "title": "Haasa'uuf iddoo dhiisi",
+          "detail": "Ormi keessan afaan, qonna yookaan jireenya guyyaa irraa maal qooduu akka barbaadu gaafadhu."
+        },
+        {
+          "title": "Muuxannoo hawaasaan geggeeffamu filadhu",
+          "detail": "Muuxannoo ogummaa, qonna yookaan nyaataa ormi naannoo keessaan qopheessi; affeerraan qofa itti makami."
+        }
+      ]
+    }
+  }
+}
