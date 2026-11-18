@@ -824,7 +824,7 @@ html[data-theme="light"] .eyebrow:has(.section-index) { border-color: rgb(169 10
 @media (hover: none) { .place-entry p { max-height: 150px; margin-top: 8px; opacity: 1; } }
 
 /* Immersive photo band */
-.immersive { position: relative; display: grid; place-items: center; min-height: 78svh; padding: 140px 8vw; overflow: hidden; background: linear-gradient(rgb(19 13 7 / 48%), rgb(19 13 7 / 78%)), url("images/commons/commons-new-york-rock-formations-near-konso-jpg-2f418e38.webp") center / cover fixed #130d07; text-align: center; }
+.immersive { position: relative; display: grid; place-items: center; min-height: 78svh; padding: 140px 8vw; overflow: hidden; background: linear-gradient(rgb(19 13 7 / 48%), rgb(19 13 7 / 78%)), url("images/commons/commons-new-york-rock-formations-near-konso-jpg-2f418e38-720.webp") center / cover fixed #130d07; text-align: center; }
 .immersive-inner { max-width: 820px; }
 .immersive h2 { margin: 0 0 22px; color: #fff6e4; font-size: clamp(38px, 5.6vw, 78px); line-height: 1.06; letter-spacing: -.02em; }
 .immersive p { max-width: 600px; margin: 0 auto 32px; color: #eadcc2; font-size: 17px; line-height: 1.8; }
@@ -846,7 +846,7 @@ html[data-theme="light"] .eyebrow:has(.section-index) { border-color: rgb(169 10
 .faq-list details:first-child { border-top: 1px solid var(--line); }
 .visit-image { border-radius: var(--radius-lg); }
 .story-image-wrap { border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
-.heritage-section { background: linear-gradient(rgb(19 13 7 / 86%), rgb(19 13 7 / 94%)), url("images/commons/commons-konso-village-in-the-cultural-landscape-of-konso-jpg-20d840a5.webp") center / cover #130d07; }
+.heritage-section { background: linear-gradient(rgb(19 13 7 / 86%), rgb(19 13 7 / 94%)), url("images/commons/commons-konso-village-in-the-cultural-landscape-of-konso-jpg-20d840a5-720.webp") center / cover #130d07; }
 .heritage-facts { border-radius: var(--radius); }
 .photo-credits { flex: 1 1 100%; color: #cdbd9f; font-size: 11px; line-height: 1.7; }
 .photo-credits summary { width: fit-content; cursor: pointer; color: var(--gold); font-weight: 600; }
