@@ -19,7 +19,7 @@ const storyData = {
       am: "በኮንሶ ባህላዊ መንደሮች በድንጋይ ግንቦች ይከበባሉ፤ መንገዶቻቸውም ጎረቤቶችን ያገናኛሉ። እያንዳንዱ ሰፈር የትውልዶችን የጋራ ግንባታና ማኅበራዊ ሕይወት ያንጸባርቃል።",
       om: "Gandoonni aadaa Konsoo dallaa dhagaa tiin marfamu; daandiiwwanis olloota walitti fidu. Qubsumi tokkoon tokkoon isaanii ijaarsa waliinii fi jireenya hawaasaa dhaloota hedduu calaqqisiisu."
     },
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Traditional_settlement_in_the_Konso_Cultural_Landscape.jpg?width=1280",
+    image: "images/commons/commons-traditional-settlement-in-the-konso-cultural-landscape-jpg-4c58347b.webp",
     alt: { en: "A traditional settlement in the Konso Cultural Landscape", am: "በኮንሶ የባህል መልክዓ ምድር ያለ ባህላዊ ሰፈር" },
     credit: "Traditional settlement · Image source & licence",
     source: "https://commons.wikimedia.org/wiki/File:Traditional_settlement_in_the_Konso_Cultural_Landscape.jpg"
@@ -31,7 +31,7 @@ const storyData = {
       am: "የድንጋይ እርከኖች የኮረብታውን ቁልቁለት ተከትለው አፈርን ከመሸርሸር ይጠብቃሉ፤ በቁልቁለት ላይ እርሻ እንዲቻልም ያግዛሉ። ጥገናቸው የትብብርና ከትውልድ ወደ ትውልድ የሚተላለፍ እውቀት ውጤት ነው።",
       om: "Tarrisiiwwan dhagaa cinaacha gaaraa hordofu; biyyoo dhiqamuu irraa eegu, lafa olka’aa irrattis qonnaaf mijataa godhu. Suphaan isaanii tumsa fi beekumsa dhalootaa tiin dabarfamu calaqqisiisa."
     },
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Agricultural_terraces_in_the_Konso_Cultural_Landscape.jpg?width=1280",
+    image: "images/commons/commons-agricultural-terraces-in-the-konso-cultural-landscape-jpg-06ca8126.webp",
     alt: { en: "Traditional agricultural terraces in the Konso Cultural Landscape", am: "በኮንሶ የባህል መልክዓ ምድር ያሉ ባህላዊ የእርሻ እርከኖች" },
     credit: "Agricultural terraces · Image source & licence",
     source: "https://commons.wikimedia.org/wiki/File:Agricultural_terraces_in_the_Konso_Cultural_Landscape.jpg"
@@ -43,7 +43,7 @@ const storyData = {
       am: "የኮንሶ ቅርስ በማኅበረሰብ ሕይወት፣ በአካባቢያዊ እውቀትና ከመሬት ጋር ባለው ጠንካራ ግንኙነት ይቀጥላል። የተጠበቀ ታሪክ ብቻ ሳይሆን፣ ይህን ቦታ ቤታቸው በሚሉ ሰዎች ዛሬም እየተፈጠረ ያለ ባህል ነው።",
       om: "Dhaalli Konsoo jireenya hawaasaa, beekumsa naannoo fi hariiroo cimaa lafa waliin qabuun jiraata. Wanti eegame qofa miti; aadaan namoota bakka kana mana isaanii jedhaniin ammallee bocamaa jira."
     },
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Traditional_Konso_village_on_a_hillside,_Ethiopia.jpg?width=1280",
+    image: "images/commons/commons-traditional-konso-village-on-a-hillside-ethiopia-jpg-7a594147.webp",
     alt: { en: "Traditional Konso village built on a hillside", am: "በኮረብታ ላይ የተገነባ ባህላዊ የኮንሶ መንደር" },
     credit: "Hillside village · Image source & licence",
     source: "https://commons.wikimedia.org/wiki/File:Traditional_Konso_village_on_a_hillside,_Ethiopia.jpg"
