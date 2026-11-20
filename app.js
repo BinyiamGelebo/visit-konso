@@ -230,10 +230,6 @@ function setLanguage(language) {
     ? "በኮንሶ ባህላዊ መልክዓ ምድር የመንደር ፓኖራማ"
     : language === "om" ? "Ilaalcha bal’aa ganda aadaa Konsoo"
     : "Panoramic view of a traditional village in the Konso Cultural Landscape";
-  document.querySelector(".visit-image img").alt = language === "am"
-    ? "በኮረብታ ላይ የተገነባ ባህላዊ የኮንሶ መንደር"
-    : language === "om" ? "Ganda aadaa Konsoo gaara irratti ijaarame"
-    : "Traditional Konso village built on a hillside";
   storyTabs.forEach((tab, index) => setFirstText(tab, language === "am" ? amharicCopy.storyTabs[index] : ["Villages", "Terraces", "Heritage"][index]));
   languageSelect.value = language;
   languageSelect.setAttribute("aria-label", language === "am" ? "ቋንቋ" : "Language");
@@ -448,7 +444,7 @@ function selectStory(tab) {
 function setTheme(theme) {
   const isDark = theme === "dark";
   document.documentElement.dataset.theme = isDark ? "dark" : "light";
-  document.querySelector('meta[name="theme-color"]').content = isDark ? "#2b2118" : "#2b2118";
+  document.querySelector('meta[name="theme-color"]').content = isDark ? "#1e211a" : "#fbf5e9";
   themeToggle.setAttribute("aria-pressed", String(isDark));
   themeToggle.querySelector(".theme-icon").textContent = isDark ? "☀" : "☾";
   writePreference("konso-theme", isDark ? "dark" : "light");
@@ -531,5 +527,5 @@ siteNav.addEventListener("click", (event) => {
 });
 
 document.querySelectorAll(".photo-card img").forEach((image) => { image.dataset.englishAlt = image.alt; });
-setTheme(readPreference("konso-theme", "dark"));
+setTheme(readPreference("konso-theme", "light"));
 setLanguage(readPreference("konso-language", "en"));
