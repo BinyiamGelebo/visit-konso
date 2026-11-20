@@ -1116,13 +1116,13 @@ img { color: var(--muted); }
 .karat-gallery h3 { margin: 0 0 14px; font-family: var(--serif); font-size: clamp(30px, 4vw, 44px); font-weight: 500; }
 .karat-gallery-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .karat-gallery figure { margin: 0; overflow: hidden; border-radius: 5px; background: var(--paper); border: 1px solid var(--line); }
-.karat-gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.karat-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .karat-gallery figcaption { display: flex; flex-direction: column; gap: 4px; padding: 10px 12px 12px; font-size: 12px; }
 .karat-gallery figcaption a { color: var(--muted); font-size: 10.5px; }
 
 html { scroll-behavior: smooth; }
 
-.essential-photo { display: block; width: 100%; aspect-ratio: 4 / 3; margin: 0 0 14px; border-radius: 4px; object-fit: cover; }
+.essential-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; margin: 0 0 14px; border-radius: 4px; object-fit: cover; }
 .karat-gallery-row { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
 .karat-gallery figcaption .photo-credit-local { color: var(--muted); }
 
