@@ -1,4 +1,4 @@
-const CACHE_NAME = "visit-konso-v20";
+const CACHE_NAME = "visit-konso-v21";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -12,6 +12,7 @@ const APP_SHELL = [
   "./adsense.js",
   "./pwa-register.js",
   "./favicon.svg",
+  "./images/terrace-logo.webp",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
