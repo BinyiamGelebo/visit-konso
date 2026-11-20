@@ -38,14 +38,9 @@ function setLanguage(language) {
   document.querySelectorAll("[data-alt-en][data-alt-am][data-alt-om]").forEach((image) => {
     image.alt = language === "am" ? image.dataset.altAm : language === "om" ? image.dataset.altOm : image.dataset.altEn;
   });
-  document.querySelectorAll("figure figcaption a[href*='wikimedia.org/wiki/File']").forEach((link) => {
-    link.textContent = language === "am" ? "የፎቶ ምንጭና ፈቃድ ↗" : language === "om" ? "Madda suuraa fi hayyama ↗" : "Image source & licence ↗";
-  });
   languageSelect.value = language;
   languageSelect.setAttribute("aria-label", language === "am" ? "ቋንቋ" : language === "om" ? "Afaan" : "Language");
   siteNav.setAttribute("aria-label", language === "am" ? "ዋና ምናሌ" : language === "om" ? "Baafata ijoo" : "Main navigation");
-  const homeLabel = language === "am" ? "ወደ የኮንሶ ዋና ገጽ" : language === "om" ? "Gara fuula duraa Konsoo" : "Visit Konso home";
-  document.querySelectorAll(".wordmark").forEach((link) => link.setAttribute("aria-label", homeLabel));
   document.querySelector(".back-top").setAttribute("aria-label", language === "am" ? "ወደ ላይ ይመለሱ" : language === "om" ? "Gara gubbaatti deebi’i" : "Back to top");
   menuToggle.setAttribute("aria-label", language === "am" ? "ምናሌውን ክፈት" : language === "om" ? "Baafata bani" : "Open navigation");
   themeToggle.setAttribute("aria-label", language === "am"

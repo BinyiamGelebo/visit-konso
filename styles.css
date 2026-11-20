@@ -1202,13 +1202,13 @@ html[data-theme="dark"] {
   --paper-light: rgba(28, 28, 30, 0.5);
   --ink: #f2f2f7;
   --muted: #a1a1aa;
-  --gold: #0a84ff;
-  --clay: #0a84ff;
-  --green: #0a84ff;
+  --gold: #3d9bff;
+  --clay: #3d9bff;
+  --green: #3d9bff;
   --green-deep: #f2f2f7;
   --line: rgba(255, 255, 255, 0.14);
   --sun: #ff9f0a;
-  --accent: #0a84ff;
+  --accent: #3d9bff;
   --surface: rgba(28, 28, 30, 0.6);
   --glass-border: 1px solid rgba(255, 255, 255, 0.14);
   --glass-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -1389,10 +1389,25 @@ html[data-theme="light"] .hero-facts strong,
 html[data-theme="dark"] .hero-facts strong { color: #7fc4ff; }
 html[data-theme="light"] .hero-facts span,
 html[data-theme="dark"] .hero-facts span { color: #fff; }
+/* 24px touch targets with a small visual dot inside. */
 html[data-theme="light"] .hero-dots button,
-html[data-theme="dark"] .hero-dots button { background: rgba(255, 255, 255, 0.5); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); }
-html[data-theme="light"] .hero-dots button.is-active,
-html[data-theme="dark"] .hero-dots button.is-active { background: #0a84ff; box-shadow: 0 2px 12px rgba(10, 132, 255, 0.6); }
+html[data-theme="dark"] .hero-dots button {
+  position: relative; width: 24px; height: 24px; padding: 0;
+  border: 0; border-radius: 999px; background: transparent; box-shadow: none;
+}
+html[data-theme="light"] .hero-dots button::after,
+html[data-theme="dark"] .hero-dots button::after {
+  content: ""; position: absolute; top: 50%; left: 50%;
+  width: 8px; height: 8px; border-radius: 999px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: width .35s var(--spring), background .35s ease;
+}
+html[data-theme="light"] .hero-dots button.is-active::after,
+html[data-theme="dark"] .hero-dots button.is-active::after {
+  width: 20px; background: #0a84ff; box-shadow: 0 2px 12px rgba(10, 132, 255, 0.6);
+}
 html[data-theme="light"] .hero-pause,
 html[data-theme="dark"] .hero-pause { border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.18); color: #fff; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 
@@ -1568,6 +1583,25 @@ html[data-theme="dark"] .section-pad + .section-pad::before,
 html[data-theme="dark"] .getting-section::before { background: linear-gradient(90deg, transparent, var(--accent), transparent); }
 html[data-theme="light"] :focus-visible,
 html[data-theme="dark"] :focus-visible { outline-color: var(--accent); }
+
+/* Dark-theme contrast fixes for links and story tabs over dark panels. */
+html[data-theme="dark"] .immersive .text-link {
+  background: #0071e3; color: #fff; box-shadow: 0 8px 24px rgba(0, 113, 227, 0.35);
+}
+html[data-theme="dark"] .story-tab,
+html[data-theme="dark"] .story-tab.is-active { color: #f2f2f7; }
+html[data-theme="dark"] .story-tab span,
+html[data-theme="dark"] .story-tab.is-active span { color: #7fc4ff; }
+
+/* Contact button: white on deeper iOS blue passes 4.5:1 contrast. */
+html[data-theme="light"] .contact-action-primary,
+html[data-theme="dark"] .contact-action-primary {
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  background: #0071e3;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 113, 227, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
 
 /* Responsive glass sizing */
 @media (max-width: 960px) {

@@ -54,7 +54,6 @@
   if (!hero) return;
   const slides = [...hero.querySelectorAll(".hero-slide")];
   const dots = [...hero.querySelectorAll(".hero-dots button")];
-  const credit = hero.querySelector(".image-credit a");
   const pauseButton = hero.querySelector(".hero-pause");
   if (slides.length < 2) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -81,7 +80,6 @@
     loadSlide(slides[(index + 1) % slides.length]);
     slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
     dots.forEach((dot, i) => { dot.classList.toggle("is-active", i === index); dot.setAttribute("aria-current", String(i === index)); });
-    if (credit) { credit.textContent = slides[index].dataset.credit; credit.href = slides[index].dataset.source; }
   }
   function stop() { if (timer) window.clearInterval(timer); timer = null; }
   function start() { stop(); if (!reduce && !manuallyPaused && !document.hidden) timer = window.setInterval(() => show(index + 1), 6500); }

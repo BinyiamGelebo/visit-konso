@@ -18,7 +18,7 @@ The site distinguishes moras (communal spaces), generation-marking stones, gener
 
 Before visiting traditional villages, the official Visit Ethiopia guidance directs visitors to the tourist information centre in Karat to arrange a mandatory local guide and pay current entrance fees. Fees, access, road conditions, flights and accommodation can change; the site links to current official guidance and advises visitors to confirm locally.
 
-Each Wikimedia Commons photo links to its file page for the specific source, author and reuse licence. Community photos were shared for this guide. The site shows generic image-source labels rather than photographer names in its interface while preserving source and licence details.
+All photographs are served locally as optimised WebP files, including the gallery thumbnails and video thumbnails. Image source and licence links are not shown in the interface; attribution details are kept in the project history and asset filenames.
 
 ## Languages
 

@@ -60,7 +60,6 @@
       "Bosonaa aadaa, iddoowwan sirnaa fi awwaalcha bocni dhaala keessa qooda qabu. Tokko tokko rukkanaa ykn darbii darbii qabu; iddoo isaanii abbootii eegumsaa naannoo irraa baradhu.",
       "Pinnaakiliiwwan dhaqaa dhagaa ijiidhuun uumaman jawwee Gesergiyoo, Konsoo keessa. Maqaan naannoo isanii 'Niiw Yoork' boca kaayyoo-fuulaa isanii irraa dhufe; waa'ee dhaabaa fi daawwannaa fuula Waa'ee Konsoo irratti baradhu."
     ]],
-    ["#photo-viewer-source", "Madda suuraa fi hayyama ↗"],
     [".story-tab", ['Gandootaa <span>01</span>', 'Tarrisiiwwan <span>02</span>', 'Dhaala <span>03</span>'], 1],
     [".checklist-print", "Tarreewwan chaapisi"],
     [".visit-copy .visit-button", 'Tarree UNESCO sirrii ilaali <span aria-hidden="true">↗</span>', 1],
@@ -71,7 +70,6 @@
 
   /* Gap-fill for both languages: [selector, {am, om}, html?]. Arrays map by element index; null skips. */
   const G = [
-    [".photo-card figcaption > a", { am: "የፎቶ ምንጭና ፈቃድ ↗", om: "Madda suuraa fi hayyama ↗" }],
     [".photo-credit-local", { am: "የማኅበረሰብ ፎቶ", om: "Suuraa hawaasaa" }],
     ["#heritage-title", { am: "የእውቀት <em>መልክዓ ምድር።</em>", om: "Bocni <em>beekumsaa.</em>" }, 1],
     [".heritage-section .visit-button", { am: "የዩኔስኮን ይፋዊ ዝርዝር ይመልከቱ", om: "Tarree UNESCO sirrii ilaali" }],

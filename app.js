@@ -1,13 +1,19 @@
 /* Static-hosting support: use the Python API when present, otherwise read data/konso-guide.json */
 let staticGuidePromise;
+async function fromStaticGuide(fromGuide) {
+  staticGuidePromise ??= fetch("data/konso-guide.json").then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
+  return fromGuide(await staticGuidePromise);
+}
 async function apiOrStatic(apiUrl, fromGuide) {
+  // Static hosts (e.g. GitHub Pages) have no API — go straight to the local
+  // JSON file so the browser does not log 404 errors for /api/* requests.
+  if (!["localhost", "127.0.0.1", "::1"].includes(location.hostname)) return fromStaticGuide(fromGuide);
   try {
     const response = await fetch(apiUrl);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return await response.json();
   } catch (apiError) {
-    staticGuidePromise ??= fetch("data/konso-guide.json").then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
-    return fromGuide(await staticGuidePromise);
+    return fromStaticGuide(fromGuide);
   }
 }
 
@@ -20,9 +26,7 @@ const storyData = {
       om: "Gandoonni aadaa Konsoo dallaa dhagaa tiin marfamu; daandiiwwanis olloota walitti fidu. Qubsumi tokkoon tokkoon isaanii ijaarsa waliinii fi jireenya hawaasaa dhaloota hedduu calaqqisiisu."
     },
     image: "images/commons/commons-traditional-settlement-in-the-konso-cultural-landscape-jpg-4c58347b.webp",
-    alt: { en: "A traditional settlement in the Konso Cultural Landscape", am: "በኮንሶ የባህል መልክዓ ምድር ያለ ባህላዊ ሰፈር" },
-    credit: "Traditional settlement · Image source & licence",
-    source: "https://commons.wikimedia.org/wiki/File:Traditional_settlement_in_the_Konso_Cultural_Landscape.jpg"
+    alt: { en: "A traditional settlement in the Konso Cultural Landscape", am: "በኮንሶ የባህል መልክዓ ምድር ያለ ባህላዊ ሰፈር", om: "Qubsuma aadaa Konsoo keessa jiru" }
   },
   terraces: {
     title: { en: "Cultivated<br><em>with care.</em>", am: "በጥንቃቄ<br><em>የታረሰ መሬት።</em>", om: "Of eeggannoodhaan<br><em>qotame.</em>" },
@@ -32,9 +36,7 @@ const storyData = {
       om: "Tarrisiiwwan dhagaa cinaacha gaaraa hordofu; biyyoo dhiqamuu irraa eegu, lafa olka’aa irrattis qonnaaf mijataa godhu. Suphaan isaanii tumsa fi beekumsa dhalootaa tiin dabarfamu calaqqisiisa."
     },
     image: "images/commons/commons-agricultural-terraces-in-the-konso-cultural-landscape-jpg-06ca8126.webp",
-    alt: { en: "Traditional agricultural terraces in the Konso Cultural Landscape", am: "በኮንሶ የባህል መልክዓ ምድር ያሉ ባህላዊ የእርሻ እርከኖች" },
-    credit: "Agricultural terraces · Image source & licence",
-    source: "https://commons.wikimedia.org/wiki/File:Agricultural_terraces_in_the_Konso_Cultural_Landscape.jpg"
+    alt: { en: "Traditional agricultural terraces in the Konso Cultural Landscape", am: "በኮንሶ የባህል መልክዓ ምድር ያሉ ባህላዊ የእርሻ እርከኖች", om: "Tarrisiiwwan qonnaa aadaa Konsoo keessa jiran" }
   },
   heritage: {
     title: { en: "A culture<br><em>in motion.</em>", am: "ሕያው<br><em>ባህል።</em>", om: "Aadaa<br><em>jijjiiramaa.</em>" },
@@ -44,9 +46,7 @@ const storyData = {
       om: "Dhaalli Konsoo jireenya hawaasaa, beekumsa naannoo fi hariiroo cimaa lafa waliin qabuun jiraata. Wanti eegame qofa miti; aadaan namoota bakka kana mana isaanii jedhaniin ammallee bocamaa jira."
     },
     image: "images/commons/commons-traditional-konso-village-on-a-hillside-ethiopia-jpg-7a594147.webp",
-    alt: { en: "Traditional Konso village built on a hillside", am: "በኮረብታ ላይ የተገነባ ባህላዊ የኮንሶ መንደር" },
-    credit: "Hillside village · Image source & licence",
-    source: "https://commons.wikimedia.org/wiki/File:Traditional_Konso_village_on_a_hillside,_Ethiopia.jpg"
+    alt: { en: "Traditional Konso village built on a hillside", am: "በኮረብታ ላይ የተገነባ ባህላዊ የኮንሶ መንደር", om: "Ganda aadaa Konsoo gaara irratti ijaarame" }
   }
 };
 
@@ -82,7 +82,6 @@ const amharicCopy = {
     ".planner-heading h3": "ለግኝት ጊዜ ይተዉ።",
     ".planner-intro": "ይህ የመነሻ እቅድ ነው፣ የተወሰነ ጉብኝት አይደለም። የቀኑን እቅድ ከአካባቢው አስጎብኚና ከማኅበረሰቡ ፈቃድ ጋር ያስተካክሉ።",
     ".visitor-heading p:last-child": "ጉብኝትዎን በአክብሮት ለማድረግ ጥቂት ተግባራዊ ማስታወሻዎች።",
-    "#photo-viewer-source": "የፎቶውን ምንጭ ይመልከቱ ↗",
     ".visit-copy > p": "የጉብኝት ቀን ብዛት ይምረጡ፤ ከዚያ እቅዱን ከፍላጎትዎ ጋር ያስማሙ።",
     ".site-footer > p": "በደቡባዊ ኢትዮጵያ የሚገኝ ሕያው የባህል መልክዓ ምድር።"
   },
@@ -128,7 +127,6 @@ const storyTabs = [...document.querySelectorAll(".story-tab")];
 const storyTitle = document.querySelector("#story-title");
 const storyDescription = document.querySelector("#story-description");
 const storyImage = document.querySelector("#story-image");
-const storyCredit = document.querySelector("#story-credit");
 const storyPanel = document.querySelector("#story-panel");
 const languageSelect = document.querySelector("#language-select");
 const themeToggle = document.querySelector(".theme-toggle");
@@ -137,7 +135,6 @@ const siteNav = document.querySelector("#site-nav");
 const photoViewer = document.querySelector("#photo-viewer");
 const viewerImage = document.querySelector("#photo-viewer-image");
 const viewerTitle = document.querySelector("#photo-viewer-title");
-const viewerSource = document.querySelector("#photo-viewer-source");
 const plannerList = document.querySelector("#itinerary-list");
 const plannerStatus = document.querySelector("#planner-status");
 const pageTitle = document.title;
@@ -365,7 +362,6 @@ async function loadPeopleProfile(language) {
       link.href = url;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.rel = "noreferrer";
       link.textContent = title;
       return link;
     });
@@ -385,11 +381,9 @@ async function loadPeopleProfile(language) {
 function showPhoto(button) {
   const card = button.closest(".photo-card");
   const image = card.querySelector("img");
-  const attribution = card.querySelector("figcaption a");
   viewerImage.src = image.currentSrc || image.src;
   viewerImage.alt = image.alt;
   viewerTitle.textContent = card.querySelector("strong").textContent;
-  viewerSource.href = attribution.href;
   photoViewer.showModal();
 }
 
@@ -426,8 +420,6 @@ function refreshStory() {
   storyDescription.textContent = story.description[language];
   storyImage.src = story.image;
   storyImage.alt = story.alt[language];
-  storyCredit.href = story.source;
-  storyCredit.textContent = language === "am" ? "የፎቶ ምንጭና ፈቃድ ↗" : language === "om" ? "Madda suuraa fi hayyama ↗" : story.credit;
   storyPanel.setAttribute("aria-labelledby", activeTab.id);
 }
 
