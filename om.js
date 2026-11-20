@@ -8,13 +8,12 @@
     "Karat is the main town and a practical base for arranging transport, a local guide and supplies. Confirm routes and services locally before setting out.": "Kaaraatiin magaalaa guddittii fi bakka mijataa geejjibaa, qajeelcha naannoo fi kuusaa qopheessuuf dha. Imaltan dura karaa fi tajaajila naannoo irratti mirkaneeffadhaa.",
     "Places to stay.": "Iddoowwan boqonnaa.",
     "The hotel describes itself as being in the heart of Karat. Confirm availability and current services directly.": "Hoteelichi ofii isaa Kaaraatii guddoo keessa jira jedha. Banaa ta'uu fi tajaajila ammaa kallattiin mirkaneeffadhaa.",
-    "Listed near Karat; booking enquiries are handled through its associated Omo Valley Tours operator. Confirm current availability before booking.": "Kaaraatiin dhiyootti tarreeffameera; gaaffiin kuusuu Omo Valley Tours waliin walqabatuun geggeeffama. Kuusuun dura banaa ta'uu mirkaneeffadhaa.",
+    "Listed near Karat; booking enquiries are handled through its associated Top Omo Valley Tours operator. Confirm current availability before booking.": "Kaaraatiin dhiyootti tarreeffameera; gaaffiin kuusuu Top Omo Valley Tours waliin walqabatuun geggeeffama. Kuusuun dura banaa ta'uu mirkaneeffadhaa.",
     "Local directory and map listings exist, but current availability is unclear. Verify it is operating before planning around it.": "Tarree naannoo fi kaartaa irratti jira, garuu banaa ta'uun isaa ammaa ifa miti. Karoora itti hirkisuun dura hojii irra jiraachuu isaa mirkaneeffadhaa.",
     "Listings are for trip planning, not endorsements. Prices, phone numbers and road access can change; confirm directly before travel.": "Tarreewwan kun karoora imalaaf malee deeggarsa miti. Gatiin, lakkoofsi bilbilaa fi haalli daandii ni jijjiiramu; imaltan dura kallattiin mirkaneeffadhaa.",
     "Stone by stone, generation by generation.": "Dhagaa dhagaan, dhaloota dhalootaan.",
     "Konso's terraces and walls are still repaired by the families who depend on them. Walk the lanes with a local guide and see a heritage that is lived, not displayed.": "Tarrisiiwwanii fi dallaawwan Konsoo maatiiwwan irratti hirkatanitti ammallee suphamu. Qajeelcha naannoo waliin daandii irra deemaa; dhaala mul'ifamu osoo hin taane jiraatu ilaalaa.",
-    "Plan your visit": "Daawwannaa keessan karoorsaa",
-    "Each photograph links to its source page for attribution and reuse terms. Community photographs were shared for this guide.": "Suuraan tokkoon tokkoon madda isaa fi haala hayyamaa agarsiisuuf gara fuula maddaatti geessa. Suuraawwan hawaasaa qajeelfama kanaaf qoodamaniiru."
+    "Plan your visit": "Daawwannaa keessan karoorsaa"
   };
   const nav = (h) => `.site-nav a[href="${h}"]:not(.nav-drop-toggle)`;
   const OM = [
@@ -49,7 +48,7 @@
     [".culture-intro > .eyebrow", "AADAA FI JIREENYA GUYYAA GUYYAA"],
     [".culture-intro > p:last-child", "Kunneen aadaa jiraataa kan walitti hidhamanidha. Aadaan hawaasa gidduutti ni garaagara, yeroo waliin ni jijjiirama; uummatni Konsoo hiikni isaa maal akka ta'e kan beekanidha."],
     [".photo-heading .eyebrow", "KONSOO SUURAA KEENNAATTI"],
-    [".photo-heading > p", "Gesergiyoo, gandoota dallaadhaan marfaman, gabaa fi iddoo jireenya hawaasaa ilaali. Suuraa guddisuuf maddaa fi hayyama isaa ilaali."],
+    [".photo-heading > p", "Gesergiyoo, gandoota dallaadhaan marfaman, gabaa fi iddoo jireenya hawaasaa ilaali. Suuraa banttee guddisee ilaali."],
     [".place-entry p", [
       "Kaaraatiin magaalaa guddittii fi bakka mijataa geejjibaa fi kuusaa dha. Imaltan dura qajeelcha naannoo, geejjibaa fi seensaa naannoo irratti mirkaneeffadhaa.",
       "Bakki maqaa qabu kan tarree suuraa UNESCO keessatti eegumsa tarrisii agarsiisu; eegumsi itti fufiinsa qabu dha, seenaa qofa miti.",
@@ -87,7 +86,7 @@
       om: ["Gandoonni mana jireenyaa malee mooziyeemii banaa miti.", "Yoo hin afeerramin iddoo dhuunfaa yookaan kan sirna keessa hin seenin.", "Qajeelchota, ogeeyyii harkaa fi daldala xixiqqaa naannoo kallattiin deeggari.", "Qajeelfama naannoo hordofi; meeshaalee dhaalaa hin tuqin yookaan hin sochoosin.", "Namoota, manneen yookaan sirna suuraa kaasuun dura eeyyama gaafadhu."]
     }],
     [".place-entry h3", { om: [null, null, null, null, "Paleetaawwan", "Tarrisiiwwan fi bishaan", "Bosonaa, iddoowwan sirnaa fi yaadannoo", null] }],
-    [".heritage-top > p", { am: "ዩኔስኮ የኮንሶን የባህል መልክዓ ምድር በ2011 በዓለም ቅርስ ዝርዝር አስመዝግቧል። ጠቀሜታው በመሬቱ፣ በሰፈሮቹና እነርሱን በሚንከባከቡ ሰዎች ቀጣይ እውቀት መካከል ባለው ግንኙነት ላይ ነው።", om: "UNESCOn Bocaa Aadaa Konsoo bara 2011 tarree Dhaala Addunyaa keessatti galmeesse. Barbaachisummaan isaa hariiroo lafaa, qubsumaawwanii fi beekumsa itti fufiinsa qabu uummata isaan eegu gidduu jiruu irratti." }],
+    [".heritage-top > p", { am: "ዩኔስኮ በኮንሶ ደረቅ-ድንጋይ በረንዶች፣ በተመሸጉ ሰፈሮችና እነርሱን ለመጠበቅ ማህበረሰቡ በሚጠቀምበት እውቀት መካከል ያለውን ግንኙነት ይገነዘባል።", om: "UNESCOn hariiroo tarrisii dhagaa gogaa, qubsumaawwan cimsamaa fi beekumsa hawaasni tarrisiiwwan kana eeguuf itti fayyadamu ni hubata." }],
     [".contact-heading .eyebrow", { am: "የጎብኚዎች መረጃ", om: "ODEEFFANNOO DAAWATTOOTAA" }],
     ["#contact-title", { am: "የመንደር ጉብኝት <em>ዝግጅት።</em>", om: "Qophii daawwannaa <em>gandootaa.</em>" }, 1],
     [".contact-card h3", { am: "የኮንሶ የቱሪስት መረጃ ማዕከል", om: "Wiirtuu Odeeffannoo Turistii Konsoo" }],

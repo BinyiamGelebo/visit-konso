@@ -4,10 +4,10 @@ A trilingual English, Amharic and Afaan Oromoo guide to the Konso Cultural Lands
 
 ## Run locally
 
-Python 3.9 or later is required for the optional local server. The static site also works on a static host.
+This is a static site; no build step or server application is required. From the project folder, serve it with any static file server:
 
 ```sh
-python3 server.py
+python3 -m http.server 8000
 ```
 
 Open <http://127.0.0.1:8000>.
@@ -30,4 +30,4 @@ Only the first hero photo loads on initial render; the next slide loads ahead of
 
 ## Hosting
 
-For static hosting, upload the complete project folder. The Python API is optional; when it is unavailable, the site reads `data/konso-guide.json` directly. `netlify.toml` includes baseline headers for Netlify.
+For static hosting, upload the complete project folder. The itinerary and guide content comes from `data/konso-guide.json`. `netlify.toml` includes baseline headers for Netlify.
