@@ -146,10 +146,12 @@ let itineraryRequestId = 0;
 let profileRequestId = 0;
 
 function firstText(element) {
+  if (!element) return "";
   return [...element.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim())?.textContent ?? "";
 }
 
 function setFirstText(element, value) {
+  if (!element) return;
   const textNode = [...element.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
   if (textNode) textNode.textContent = value;
   else element.textContent = value;
@@ -174,9 +176,18 @@ function writePreference(key, value) {
 
 function saveOriginals(copy) {
   const saved = { html: {}, text: {}, first: {}, lists: {}, photoCategories: [], photoTitles: [], photoFilters: [], plannerOptions: [] };
-  Object.keys(copy.html).forEach((selector) => { saved.html[selector] = document.querySelector(selector).innerHTML; });
-  Object.keys(copy.text).forEach((selector) => { saved.text[selector] = document.querySelector(selector).textContent; });
-  Object.keys(copy.first).forEach((selector) => { saved.first[selector] = firstText(document.querySelector(selector)); });
+  Object.keys(copy.html).forEach((selector) => {
+    const element = document.querySelector(selector);
+    if (element) saved.html[selector] = element.innerHTML;
+  });
+  Object.keys(copy.text).forEach((selector) => {
+    const element = document.querySelector(selector);
+    if (element) saved.text[selector] = element.textContent;
+  });
+  Object.keys(copy.first).forEach((selector) => {
+    const element = document.querySelector(selector);
+    if (element) saved.first[selector] = firstText(element);
+  });
   Object.keys(copy.lists).forEach((selector) => { saved.lists[selector] = [...document.querySelectorAll(selector)].map((element) => element.textContent); });
   saved.photoCategories = [...document.querySelectorAll(".photo-category")].map((element) => element.textContent);
   saved.photoTitles = [...document.querySelectorAll(".photo-card strong")].map((element) => element.textContent);
@@ -196,8 +207,14 @@ function setLanguage(language) {
   document.querySelector('meta[name="description"]').content = language === "am"
     ? "የኮንሶ ሕዝብ ቦታዎችን፣ ቋንቋን፣ ባህሎችንና ሕያው የባህል መልክዓ ምድርን ይወቁ።"
     : pageDescription;
-  Object.entries(copy.html).forEach(([selector, value]) => { document.querySelector(selector).innerHTML = value; });
-  Object.entries(copy.text).forEach(([selector, value]) => { document.querySelector(selector).textContent = value; });
+  Object.entries(copy.html).forEach(([selector, value]) => {
+    const element = document.querySelector(selector);
+    if (element) element.innerHTML = value;
+  });
+  Object.entries(copy.text).forEach(([selector, value]) => {
+    const element = document.querySelector(selector);
+    if (element) element.textContent = value;
+  });
   Object.entries(copy.first).forEach(([selector, value]) => { setFirstText(document.querySelector(selector), value); });
   document.querySelectorAll("[data-home-en][data-home-am]").forEach((element) => {
     element.textContent = language === "am" ? element.dataset.homeAm : language === "om" && element.dataset.homeOm ? element.dataset.homeOm : element.dataset.homeEn;
@@ -381,7 +398,8 @@ async function loadPeopleProfile(language) {
 function showPhoto(button) {
   const card = button.closest(".photo-card");
   const image = card.querySelector("img");
-  viewerImage.src = image.currentSrc || image.src;
+  /* Use the full-resolution file for the modal; thumbnails stay small and fast. */
+  viewerImage.src = image.dataset.full || image.src;
   viewerImage.alt = image.alt;
   viewerTitle.textContent = card.querySelector("strong").textContent;
   photoViewer.showModal();
