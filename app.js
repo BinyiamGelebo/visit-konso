@@ -444,7 +444,7 @@ function selectStory(tab) {
 function setTheme(theme) {
   const isDark = theme === "dark";
   document.documentElement.dataset.theme = isDark ? "dark" : "light";
-  document.querySelector('meta[name="theme-color"]').content = isDark ? "#1e211a" : "#fbf5e9";
+  document.querySelector('meta[name="theme-color"]').content = isDark ? "#0e0e10" : "#eef2f6";
   themeToggle.setAttribute("aria-pressed", String(isDark));
   themeToggle.querySelector(".theme-icon").textContent = isDark ? "☀" : "☾";
   writePreference("konso-theme", isDark ? "dark" : "light");
