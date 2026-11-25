@@ -76,7 +76,7 @@ const amharicCopy = {
     ".places-heading > p": "የኮንሶ ቅርስ አንድ ሐውልት ብቻ አይደለም። በሰዎች የሚኖሩባቸውን በግንብ የተከበቡ ሰፈሮች፣ የእርሻ መሬቶች፣ የጋራ ስፍራዎችና የተጠበቁ ደኖችን የሚያገናኝ ሕያው መልክዓ ምድር ነው። የዩኔስኮ ገጽታ እነዚህን አካላት በኮንሶ ደጋማ አካባቢ አንድ ላይ ያገናኛል።",
     ".map-copy .eyebrow": "አቅጣጫ ይወቁ",
     ".map-copy > p:not(.eyebrow)": "ይህ ካርታ አጠቃላይ አቅጣጫ ለማወቅ ብቻ ነው። የግል ቤቶችን፣ የሥነ ሥርዓት ስፍራዎችን ወይም ሁሉንም የማኅበረሰብ መንገዶችን አያሳይም። ከአካባቢው አስጎብኚ ጋር መድረሻዎችንና የመግቢያ ፈቃድን ያረጋግጡ።",
-    ".map-copy small": "የካርታ መረጃ © OpenStreetMap አበርካቾች",
+    ".map-copy small": "የካርታ © Google",
     ".culture-intro > p:last-child": "እነዚህ የሕያው ባህል የተያያዙ ክፍሎች ናቸው። ልምዶች በማኅበረሰቦች መካከል ይለያያሉ፣ ከጊዜ ጋርም ይለወጣሉ፤ ትርጉማቸውን በተሻለ የሚያውቁት የኮንሶ ሕዝብ ነው።",
     ".photo-heading > p": "የጌሰርጊዮ የተቀረጹ ኮረብታዎች፣ በድንጋይ የተከበቡ መንደሮች፣ የገበያ እይታዎችና የማኅበረሰብ ሕይወት የሚካሄድባቸው ስፍራዎች። ፎቶውን ለማስፋትና ምንጩንና ፈቃዱን ለማረጋገጥ ይክፈቱ።",
     ".planner-heading h3": "ለግኝት ጊዜ ይተዉ።",
@@ -91,7 +91,7 @@ const amharicCopy = {
     ".section-heading > .eyebrow": "መልክዓ ምድሩ",
     ".landscape-body > a": "ኮንሶን ይበልጥ ይወቁ ",
     ".places-heading > div .eyebrow": "የቦታ መመሪያ",
-    ".map-copy > a": "ካርታውን ይክፈቱ ",
+    ".map-copy > a": "በጉግል ማፕስ ይክፈቱ ",
     ".culture-intro > .eyebrow": "ባህልና ዕለታዊ ሕይወት",
     ".photo-heading .eyebrow": "ኮንሶ በፎቶ",
     ".planner-heading .eyebrow": "የጉብኝት እቅድ",
@@ -253,7 +253,7 @@ function setLanguage(language) {
   document.querySelector(".planner-options").setAttribute("aria-label", language === "am" ? "የጉብኝት ቀናትን ይምረጡ" : "Choose a visit length");
   document.querySelector(".itinerary-list").setAttribute("aria-label", language === "am" ? "የጉብኝት አስተያየት እቅድ" : "Suggested visit outline");
   document.querySelector(".photo-viewer-close").setAttribute("aria-label", language === "am" ? "ፎቶውን ዝጋ" : "Close photograph");
-  document.querySelector(".map-block iframe").title = language === "am" ? "በደቡባዊ ኢትዮጵያ የኮንሶ አካባቢን የሚያሳይ ካርታ" : language === "om" ? "Kaartaa naannoo Konsoo kibba Itoophiyaa keessa jiru agarsiisu" : "Map showing the general Konso area in southern Ethiopia";
+  document.querySelector(".map-block iframe").title = language === "am" ? "በደቡባዊ ኢትዮጵያ የኮንሶ ደጋማ አካባቢ የሚገኘው የካራት ከተማ ካርታ" : language === "om" ? "Kaartaa magaalaa Kaaraatii baddaa Konsoo keessa, kibba Itoophiyaa" : "Map of Karat town in the Konso highlands, southern Ethiopia";
   document.querySelector(".back-top").setAttribute("aria-label", language === "am" ? "ወደ ላይ ይመለሱ" : "Back to top");
   if (language === "om" || language === "am") window.applyOromo?.(language);
   document.querySelectorAll(".photo-open").forEach((button) => {

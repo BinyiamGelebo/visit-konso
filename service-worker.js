@@ -1,4 +1,4 @@
-const CACHE_NAME = "visit-konso-v26";
+const CACHE_NAME = "visit-konso-v27";
 const APP_SHELL = [
   "./",
   "./index.html",
